@@ -7,6 +7,7 @@ the example.json with a single service), and jberkhahn/more_service_broker (whic
 ### How to push ###
 -------------------
 `kubectl create -f broker_pod.yml`
+
 `kubectl create -f broker_svc.yml`
 
 The broker can then be added under the endpoint created for the service.
