@@ -6,9 +6,9 @@ of the [Open Service Broker](https://www.openservicebrokerapi.org/) API. There a
 the example.json with a single service), and jberkhahn/more_service_broker (which uses cats.json with more services).
 ### How to push ###
 -------------------
-`kubectl create -f broker_pod.yml`
+`kubectl create -f broker_pod.yaml`
 
-`kubectl create -f broker_svc.yml`
+`kubectl create -f broker_svc.yaml`
 
 The broker can then be added under the endpoint created for the service.
 
