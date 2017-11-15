@@ -1,6 +1,6 @@
 # Kubernetes Async Broker
 
-This respository contains a fork of the test broker used in Cloud Foundry's [CF-Acceptance-Tests](http://github.com/cloudfoundry/cf-acceptance-tests].
+This respository contains a fork of the test broker used in Cloud Foundry's [CF-Acceptance-Tests](http://github.com/cloudfoundry/cf-acceptance-tests).
 It has been modified to run on Kubernetes to help test the [Service Catalog](http://github.com/kubernetes-incubator/service-catalog), Kubernete's implmentation
 of the [Open Service Broker](https://www.openservicebrokerapi.org/) API. There are two dockerfiles associated with this project, jberkhahn/test_service_broker (which uses
 the example.json with a single service), and jberkhahn/more_service_broker (which uses cats.json with more services).
