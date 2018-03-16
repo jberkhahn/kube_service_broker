@@ -182,6 +182,8 @@ class ServiceBroker < Sinatra::Base
   def respond_from_config(behavior)
     status behavior['status']
     if behavior['body']
+      value = ""; 8.times{value << ((rand(2)==1?65:97) + rand(25)).chr}
+      behavior['body']['dashboard_url'] = "http://" + value + ".com"
       log_response(status, behavior['body'].to_json)
     else
       log_response(status, behavior['raw_body'])
@@ -245,6 +247,8 @@ class ServiceBroker < Sinatra::Base
       service_instance.update!(json_body) if service_instance
     end
 
+    value = ""; 8.times{value << ((rand(2)==1?65:97) + rand(25)).chr}
+    behavior['body']['dashboard_url'] = "http://" + value + ".com"
     respond_with_behavior(behavior, params['accepts_incomplete'])
   end
 
